@@ -1,0 +1,84 @@
+
+ <!doctype html> 
+ <html lang="en"> 
+ <head> 
+     <title>Coronavirus Intake Form for attend class</title> 
+     <meta charset="UTF-8"> 
+ </head> 
+ <body> 
+     <h1>Coronavirus Intake Form for attend class</h1> 
+     <p> For all of our safety , please fill this out 24 hours prior to each calss(until further notice) Be sure that the Information you'll give is accurate and complete . Please get immediata medical attention if you have any of the severe COVID-19 signs </p> 
+     <form action="sul.html" autocomplete="off" method="post" target="_blank"> 
+         <fieldset> 
+             <legend>Personal Information </legend> 
+             <label for="Fname">First Name:</label><br> 
+             <input type="text" id="Fname" Frist name="fn" required> <br><br> 
+             <!-- Radio--> 
+             <label for="Lname">LastName:</label><br> 
+             <input type="text" id="Lname" Last name="fn" maxlength="6"> <br><br> 
+             <!-- Radio--> 
+            
+                 <div> 
+                     <label for="bday">Data of Birth</label><br><br> 
+                     <input type="date" id="bday" name="bday"max="2003-01-01"> 
+  
+                 </div> 
+              
+             <!--tel type--> 
+  
+             <label for="t">phone:</label><br><br> 
+             <input autocomplete="off" type="tel" id="t" name="phone" pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}' let theText=phone.value;> 
+             <br><br> 
+             <label for="email">Email</label><br><br> 
+             <input  autocomplete="off" type="email" id="email" name="email" required><br><br> 
+  
+             <label for="male"> Do tou haveتطمئن- تباعد - توكلنا APPs in your phone:</label> 
+             <input type="radio" id="male" checked="checked" name=" Do tou haveتطمئن- تباعد - توكلنا APPs in your phone:" value='male'> 
+             <label for="male">YES:</label> 
+             <input type="radio" id="male" name=" Do tou haveتطمئن- تباعد - توكلنا APPs in your phone:" value='male'> 
+             <label for="male">NO:</label> 
+  
+             <br><br> 
+  
+  
+  
+         </fieldset> 
+         <fieldset> 
+             <legend> Class Information</legend> 
+  
+             <fieldset> 
+                 <legend>Class Information</legend> 
+                 <label for="cars">Choose a class:</label> 
+                 <select name="cars" id="cars"> 
+                     <option value="volvo">204IT:Web programming </option> 
+                     <option value="saab">201 Cs:Programming1</option> 
+                     <option value="mercedes">202 Cs:Programming2</option> 
+                     <option value="audi">412 Cs:Computer Ethics</option> 
+                 </select> 
+                 <br/> 
+  
+  
+                 <label for="chclass">please explain why you need to attand lab:</label><br><br> 
+                 <textarea id='cp' name='comment' rows='5' cols='100'></textarea><br> 
+             </fieldset> 
+             <fieldset> 
+                 <legend> Heath Information </legend> 
+  
+                 <!-- range --> 
+                 <label for='r'> How healthy do you fall in general?:</label><br><br> 
+                 0<input type='range' id='r' name='rs' min="0" max="10">10 <br><br>
+                 <p>Check the symptoms that you have experienced in the PAST Week:</p>
+                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Chills">
+                 <label for="vehicle1">  Fever Chills</label><br>
+                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Headaches">
+                 <label for="vehicle2">Headaches</label><br>
+                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Coughing">
+                 <label for="vehicle3"> Coughing </label><br>
+                 <input type="checkbox" id="vehicle3" name="vehicle3" value="breath">
+                 <label for="vehicle3"> Shortness of breath </label><br>
+                 <input type="checkbox" id="vehicle3" name="vehicle3" value="taste">
+                 <label for="vehicle3"> Recent loss of sense of smell or taste</label><br>
+
+
+             </fieldset> 
+             <input type='submit' value="send">
