@@ -1,0 +1,71 @@
+
+body {
+    background-image: url('photo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+}
+h1, h2, h3, h4 , h5, h6
+{
+    color: green;
+}
+ul.a { /*unorder list*/
+    list-style-type: square;
+}
+
+ol.b {  /*order list*/
+    list-style-type: upper-roman;
+}
+
+
+ol.c {
+    list-style-type: lower-roman;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: underline;
+       
+    }
+    a:visited {
+        color:red
+    }
+   
+    a:link {
+        color: green;
+    }
+    a:hover {
+        color: green;
+    }
+    a:active {
+        color: black
+    }
+
+    p.fnt
+
+    {
+        font-family:'Times New Roman', Times, serif
+
+    }
+
+p.sz {
+    font-size:15px
+}
+
+p.clr {
+
+    color:yellow
+}
+
+h1.double {
+    border-style: double;
+    margin :10px;
+    padding:20px
+}
