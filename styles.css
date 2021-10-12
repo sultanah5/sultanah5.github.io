@@ -1,6 +1,7 @@
 
 body {
-    background-image: url('photo.jpg');
+    background-image: url(image/ud.png);
+    background-size: 15%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top right;
