@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <center>
+         Enter Your Name: <input type="text" id="name"> <br> <br/>
+         <button onclick="GetTimeFunction()">ok</button>
+         <p id="demo"></p>
+      </center>
+      <script>
+         function GetTimeFunction() {
+           var Name = document.getElementById("name").value;
+           var CurrentDate = new Date();
+           var CurrentHour = CurrentDate.getHours();
+           var greet;
+         
+             if (CurrentHour < 12)
+                 greet = 'Good Morning';
+             else if (CurrentHour >= 12 && CurrentHour <= 24)
+                 greet = 'Good Afternoon';
+         
+             document.getElementById('demo').innerHTML = '<h1>' + greet + '&nbsp;' +  Name + '</h1>';
+         }
+      </script>
+   </body>
+</html>

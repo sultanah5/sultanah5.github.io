@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <body>
+    <hl>Body Calculator Create Using Javascript</hl> 
+    <p>Your weight (kg): <input type="text" id="weight"/></p>
+    <p> Your Height(cm): <input type="text" id="height"/> </p>
+
+    <input type="submit" value="Calculat BMI" onclick="FindBMI()";>
+    <p> Your BMI : <span id="BMIns"></span></p>
+<p> This mean your BMI: <span id="weighta" ></span></p>
+   </body>
+</html>
+<script>
+    function FindBMI () {
+ var height = document.getelenenteyrd("height"). value;
+  var weight = docunent.getElenentlyid("weight"). value;
+   var BMI =(weight=10000) / (height*height); 
+
+   document.getElementById("BMIAns"). innerText = BMI;
+
+   if (BMI < 18.5)
+   document. getElementById("weighta").innerText -"That you are Underweight";
+    else if (BMI >- 18.5 && BMI <= 24,9) 
+    document. getElementById ("weighta").innerText - "That you are healthy";
+     else if (BMI >= 25  && BMI <= 29.9)
+     docunent. getElementById ("weighta").innerText -"That you are Overweight";
+    }
+    </script>
