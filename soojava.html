@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<style>
+.e { color:red;}
+</style> <script>
+    function validateForm() {
+        var r = false;
+        debugger;
+ var x=document.getElementById("name").value; 
+var regEx = /^[A-Za-z]+$/;
+if (!(x.match(regEx)))
+{
+    document.getElementById("elname").innerHTML = "* only letter is allowed";
+
+    document.getElementById("elname").style.color = 'red';
+    return r;
+}
+else
+{
+    document.getElementById("elname").innerHTML = " ";
+    document.getElementById("elname").style.color = 'black';
+        }
+
+         
+        var usr = document.getElementById("username").value; 
+        if (usr == "") {
+            document.getElementById("elusername").innerHTML = "* username must be filled out ";
+
+            document.getElementById("elusername").style.color = 'red';
+            return r;
+        }
+        else {
+            document.getElementById("elusername").innerHTML = " ";
+            document.getElementById("elusername").style.color = 'black';
+
+        }
+      
+        var pass = document.getElementById("pass").value; 
+     var regEx2 = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/;
+     if (pass == "") {
+         document.getElementById("elpass").innerHTML = "* password must be filled out ";
+
+         document.getElementById("elpass").style.color = 'red';
+         return r;
+     }
+     else if (pass.innerHTML = x.innerHTML ) {
+         document.getElementById("elpass").innerHTML = "* Should not the same of user-name ";
+
+         document.getElementById("elpass").style.color = 'red';
+         return r;
+         }
+     else if (!(pass.match(regEx2)))
+     {
+         document.getElementById("elpass").innerHTML = "* your password Should be 6- 10 length and Al least one small letter and one capital letter and one digit ";
+
+         document.getElementById("elpass").style.color = 'red';
+         return r;
+     }
+     else {
+         document.getElementById("elpass").innerHTML = " ";
+         document.getElementById("elpass").style.color = 'black';
+     }
+        var pass2 = document.getElementById("pass2").value; 
+        if (pass2 != pass) {
+            document.getElementById("elpass2").innerHTML = "* your password does not  match ";
+
+            document.getElementById("elpass2").style.color = 'red';
+            return r;
+        }
+        else {
+            document.getElementById("elpass2").innerHTML = " ";
+            document.getElementById("elpass2").style.color = 'black';
+        }
+ }
+</script> </head>
+<body>
+<h1> SIGN UP </h1>
+<form onsubmit="return validateForm()"> Full name:
+<input type="text" id="name" ><span id="elname"></span><br><br> User Name:
+ <input type="text" id="username"> <span id="elusername"></span><br><br> password:
+<input type="password" id="pass"> <span id="elpass"></span><br><br>
+Confrim password:
+<input type="password" id="pass2"><span id="elpass2"></span><br><br>
+ <input type="submit" value="SIGN UP"> </form>
+
+
+ 
+</body> 
+</html>
